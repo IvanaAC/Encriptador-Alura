@@ -19,51 +19,51 @@
         <div class="caja">
             <img  src="imagenes/Logo.png"alt="Logo-Alura" class="logoAlura">
             <img src="imagenes/logo-batman.jpg" alt="logo-batman" class="LogoBatman">            
-            <h1>  Challenge ONE </h1>
-            <h2>Encriptador</h2>
-            <h3> BatiEncriptador </h3>
-
+            <p class="texto-header">  Challenge ONE </p>
+            <p class="texto-header">Encriptador</p>
         </div>
     </header>
 
     <main> 
-        <section class="contenedor-izquierda">
-            <textarea id="textoDeEntrada" class="textoEntrada" placeholder="Ingresa el texto que deseas encriptar o desencriptar."  cols="40" rows="10"></textarea> 
-            <div class="condiciones">
-                <ul>
-                    <li class="condicion">El texto debe contener únicamente letras minúsculas.</li>
-                    <li class="condicion">No puedes usar acentos ni caracteres especiales.</li>
-                </ul>
+        <h1 class="titulo"> BatiEncriptador </h1>
+        <section class="flex"> 
+            <section class="contenedor-izquierda">
+                <textarea id="textoDeEntrada" class="textoEntrada" placeholder="Ingresa el texto que deseas encriptar o desencriptar."  cols="40" rows="10"></textarea> 
+                <div class="condiciones">
+                    <ul>
+                        <li class="condicion">El texto debe contener únicamente letras minúsculas.</li>
+                        <li class="condicion">No puedes usar acentos ni caracteres especiales.</li>
+                    </ul>
+                </div>
+                <div class="botones-uno">  
+                    <button id="botonEncriptar" class="boton-encriptar">Encriptar</button>
+                    <button id="botonDesencriptar" class="boton-desencriptar">Desencriptar</button>
+                </div>  
+            </section>   
+    
+            <div class="imagenes">
+                <img src="imagenes/pregunta3.png" id="pregunta" class="pregunta" alt="pregunta">
+                <img src="imagenes/Acertijo.png" id="img-acertijo" class="img-acertijo" alt="Riddler">
+                <img src="imagenes/Batman.png" id="img-batman" class="img-batman" alt="Batman">
             </div>
-            <div class="botones-uno">  
-                <button id="botonEncriptar" class="boton-encriptar">Encriptar</button>
-                <button id="botonDesencriptar" class="boton-desencriptar">Desencriptar</button>
-            </div>  
-        </section>   
-
-        <div class="imagenes">
-            <img src="imagenes/pregunta3.png" id="pregunta" class="pregunta" alt="pregunta">
-            <img src="imagenes/Acertijo.png" id="img-acertijo" class="img-acertijo" alt="Riddler">
-            <img src="imagenes/Batman.png" id="img-batman" class="img-batman" alt="Batman">
-        </div>
-
-        <section class="contenedor-derecha">
-            <textarea id="textoDeSalida" class="texto-salida" placeholder="No se ha encontrado ningún texto." cols="30" rows="10" readonly></textarea> 
-            <div class="opciones">
-                <ul>
-                    <li class="opcion">Para copiar el texto, haz click en el botón Copiar.</li> 
-                    <li class="opcion">Puedes ingresar un nuevo texto haciendo click en el botón Nuevo.</li>
-                </ul>
-                
-            </div>     
-            <div class="botones-dos">
-                <button id= "botonCopiar" class="boton-copiar">Copiar</button>
-                <button id="botonNuevo" class="boton-nuevo"> Nuevo
-                </button>
-            </div>     
-        </section>
+    
+            <section class="contenedor-derecha">
+                <textarea id="textoDeSalida" class="texto-salida" placeholder="No se ha encontrado ningún texto." cols="30" rows="10" readonly></textarea> 
+                <div class="opciones">
+                    <ul>
+                        <li class="opcion">Para copiar el texto, haz click en el botón Copiar.</li> 
+                        <li class="opcion">Puedes ingresar un nuevo texto haciendo click en el botón Nuevo.</li>
+                    </ul>
+                    
+                </div>     
+                <div class="botones-dos">
+                    <button id= "botonCopiar" class="boton-copiar">Copiar</button>
+                    <button id="botonNuevo" class="boton-nuevo"> Nuevo
+                    </button>
+                </div>     
+            </section>
+    </section>
     </main>
-
 
     <footer>
         <p> &copy; Ivana Anabel Caceres - 2024</p>
