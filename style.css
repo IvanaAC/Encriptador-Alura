@@ -68,7 +68,7 @@ main {
     border: none;
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.8);margin: 20px 30px;
-    padding: 1em;
+    padding: 1em 1em 0 1em;
 }
 
 .textoEntrada, .texto-salida{
@@ -110,7 +110,6 @@ main {
     display: inline-block;
     width: 20%;
     align-items: center;
-    margin: 10px 10px 20px 5px;
 }
 
 .pregunta{
@@ -121,7 +120,7 @@ main {
 
 .img-batman , .img-acertijo{
     display: none;
-    width: 260px;
+    width: 280px;
     margin: 3em 0 0 0;
 }
 
