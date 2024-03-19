@@ -12,7 +12,7 @@ header{
     font-family: "Russo One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding: 5px;
+    padding: 16px;
 }
 
 .logoAlura{
@@ -20,46 +20,55 @@ header{
     margin: 0 0 1em 2em;
     background-color: rgba(241, 241, 241, 0.8);
     border-radius: 40px;
-    width: 6%;
+    width: 6.5%;
 }
 
-h1, h2{    
-    font-size: 1.5em;
+.texto-header{    
+    font-size: 1.4em;
     text-align: left;
-    margin: 1em 0;
+    margin: 1em 0 1em;
 }
-
-h3 {
-    font-size: 2.5em;
-    text-align: center;
-    margin: -1em 0 0.3em -2em;
-    padding: 1em 0 0 0;
-    text-shadow: -8px 8px 16px rgba(115, 228, 106, 6), 8px -8px 16px rgba(115, 228, 106, 6);
-    color: black;
-} 
 
 .LogoBatman{
-    width: 150px;
+    width: 200px;
     float: right;
     border-radius: 60px;
-    margin: -1em 6em 0 2em;
+    margin: -1.5em 3em 1em 3em;
 }
 
-main{
+main {
     width: 100%;
     height: 70%;
     background: url(imagenes/fondo-main.jpg);
+}
+
+.titulo {
+    display: block;
+    width: 100%;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5em;
+    text-align: center;
+    clear: left;
+    text-shadow: -8px 8px 16px rgba(115, 228, 106, 9), 8px -8px 16px rgba(115, 228, 106, 10);
+    color: black;
+    padding: 0.5em ;
+} 
+
+.flex{
     display: flex;
 }
 
 .contenedor-izquierda, .contenedor-derecha{
-    width: 30%;
+    width: 35%;
     height: 90%;
     left: 12%;
     top: 15%;
     border: none;
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.8);margin: 20px 30px;
+    padding: 1em;
 }
 
 .textoEntrada, .texto-salida{
@@ -99,21 +108,22 @@ main{
 
 .imagenes {
     display: inline-block;
-    width: 26%;
+    width: 20%;
     align-items: center;
     margin: 10px 10px 20px 5px;
 }
 
 .pregunta{
-    width: 280px;
+    width: 190px;
     padding: 0 1.5em;
+    margin: 2em;
 }
 
 .img-batman , .img-acertijo{
     display: none;
-    width: 380px;
+    width: 260px;
+    margin: 3em 0 0 0;
 }
-
 
 .boton-encriptar , .boton-desencriptar, .boton-copiar , .boton-nuevo {
     background: #271d27;
@@ -123,7 +133,7 @@ main{
     width: 8em;
     cursor: pointer;
     padding: 1em 1em;
-    margin: 0em 0 0.5em 2em;
+    margin: 0em 0 0.5em 1em;
     text-align: center;
     font-family: "Exo 2", sans-serif;
     font-weight: bold;
@@ -163,7 +173,6 @@ main{
 
 .boton-encriptar:active, .boton-desencriptar:active, .boton-copiar:active, .boton-nuevo:active{
     border-color: rgb(245, 243, 243);
-    padding: 0 0 2em ;
 }
 
 footer{
@@ -187,15 +196,15 @@ footer{
 
 /*DISEÑO RESPONSIVE TABLET*/
 @media screen and (max-width: 769px) {
-    main {
+    .flex{
         display: inline-block;
     }
 
-    h1, h2{    
+    .texto-header{    
         font-size: 1em;
     }
     
-    h3 {
+    .titulo {
         font-size: 2em;
     }
 
@@ -205,12 +214,12 @@ footer{
     }
     
     .contenedor-izquierda{
-        width: 90%;
+        width: 680px;
         margin: 1em 0 4em 1em;
     }
 
     .contenedor-derecha {
-        width: calc(80% - 20px);
+        width: calc(580px - 20px);
         margin: 1em 0 4em 1em;
     }
 
@@ -222,27 +231,28 @@ footer{
     .condiciones, .opciones {
         width: 86%;
         font-size: 18px;
-        margin: 5px 10px 20px 5px;
+        margin: 5px 10px 10px 5px;
         padding: 0em 2em 1em 1em;
     }
 
     .imagenes {
-        width: 25%;
-        margin: -5em 0.5em;
+        width: 30%;
+        margin: -8em 2em;
         float: right;
     }
 
     .pregunta{
         width: 140px;
-        padding: 0 0em;
+        margin: 8em 0 0 4em;
     }
     
     .img-batman , .img-acertijo{
         display: none;
         width: 200px;
         padding: 0 0em;
+        margin: 8em 0 0 4em;
     }
-    
+
     .boton-encriptar , .boton-desencriptar, .boton-copiar , .boton-nuevo {
         width: 8em;
         padding: 0.7em 0.7em;
@@ -253,37 +263,44 @@ footer{
     footer{
         font-size: 14px;
     }
+
+    .logos{
+        width: 32px;
+        margin: 12px;
+    }
 }
 
 /*DISEÑO RESPONSIVE CELULAR*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 481px) {
     header{
         height: 0%;
+        padding: 10px;
     }
-    main {
+
+    .flex {
         display: inline-block;
     }
 
-    h1, h2{    
-        font-size: 0.6em;
+    .texto-header{    
+        font-size: 0.8em;
     }
     
-    h3 {
-        font-size: 1.2em;
+    .titulo {
+        font-size: 1.7em;
         text-align: center;
     }
 
     .LogoBatman{
-        width: 70px;
-        margin: 0.3em 1em 0 2em;
+        width: 80px;
+        margin: 0.1em 2em 0em; 
     }
     
     .contenedor-izquierda , .contenedor-derecha {
-        width: 90%;
+        width: 85%;
         margin: 20px 0 0 20px;
+        padding: 0.5em;
     }
 
-    
     .textoEntrada, .texto-salida{
         font-size: 16px;    
         height: 300px ;
@@ -295,13 +312,14 @@ footer{
         margin: 5px 10px 20px 5px;
         padding: 0.6em 1em 0.6em 1em;
     }
+    
     .condicion:before, .opcion:before{
         content: "*";
     }
 
     .imagenes {
         width: 20%;
-        margin: -8em 2em;
+        margin: -7.5em 1em;
         float: left;
     }
 
@@ -319,15 +337,24 @@ footer{
     .boton-encriptar , .boton-desencriptar, .boton-copiar , .boton-nuevo {
         width: 8em;
         padding: 0.7em 0.7em;
-        margin: 0em 0 0.5em 11em;
+    
         font-size: 14px;
+    }
+    .boton-encriptar , .boton-desencriptar{
+        margin: 0em 0 0.5em 12em;
+    }
+    
+    .boton-copiar , .boton-nuevo {
+        margin: 0em 0 0.5em 10em;
     }
 
     footer{
         font-size: 12px;
     }
+
     .logos{
         width: 24px;
         margin: 12px;
     }
 }
+
