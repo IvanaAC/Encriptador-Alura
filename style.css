@@ -1,0 +1,333 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 15%;
+    background: url(imagenes/fondo-header.jpg);
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px;
+}
+
+.logoAlura{
+    float: left;
+    margin: 0 0 1em 2em;
+    background-color: rgba(241, 241, 241, 0.8);
+    border-radius: 40px;
+    width: 6%;
+}
+
+h1, h2{    
+    font-size: 1.5em;
+    text-align: left;
+    margin: 1em 0;
+}
+
+h3 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: -1em 0 0.3em -2em;
+    padding: 1em 0 0 0;
+    text-shadow: -8px 8px 16px rgba(115, 228, 106, 6), 8px -8px 16px rgba(115, 228, 106, 6);
+    color: black;
+} 
+
+.LogoBatman{
+    width: 150px;
+    float: right;
+    border-radius: 60px;
+    margin: -1em 6em 0 2em;
+}
+
+main{
+    width: 100%;
+    height: 70%;
+    background: url(imagenes/fondo-main.jpg);
+    display: flex;
+}
+
+.contenedor-izquierda, .contenedor-derecha{
+    width: 30%;
+    height: 90%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.8);margin: 20px 30px;
+}
+
+.textoEntrada, .texto-salida{
+    color: #000000;
+    border: none;
+    outline: none;
+    background:#f8f8f8;
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    border-radius: 15px;
+    width: 95%;
+    height: 60%;
+    margin: 5px 5px 0px 6px;
+    padding: 10px 0px 0px 10px;
+}
+
+.condiciones, .opciones {
+    position:relative;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
+    font-style:normal;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    text-align: justify;
+    background:#f0edf0;
+    border: rgb(10, 10, 10);
+    border-style:dotted ;
+    margin: 10px 0 20px 0.5px;
+    padding: 0em 0.5em 1em 0.5em;
+}
+
+.condicion:before, .opcion:before{
+    content: url(imagenes/icono-batman.png);
+}
+
+.imagenes {
+    display: inline-block;
+    width: 26%;
+    align-items: center;
+    margin: 10px 10px 20px 5px;
+}
+
+.pregunta{
+    width: 280px;
+    padding: 0 1.5em;
+}
+
+.img-batman , .img-acertijo{
+    display: none;
+    width: 380px;
+}
+
+
+.boton-encriptar , .boton-desencriptar, .boton-copiar , .boton-nuevo {
+    background: #271d27;
+    display: inline-block;
+    border: solid #ccc8bb;
+    color: rgba(244, 245, 249);
+    width: 8em;
+    cursor: pointer;
+    padding: 1em 1em;
+    margin: 0em 0 0.5em 2em;
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 2px 0px rgba(199, 202, 200, 0.965), 0 -1px 2px 0 rgba(241, 244, 241, 0.814);
+}
+
+.boton-encriptar:hover{
+    background:#5fc93c;
+    color:black;
+    box-shadow: 0px 8px 16px 0px rgba(1, 246, 79, 0.965), 0 -6px 20px 0 rgba(3, 255, 12, 0.814);
+    border-color: #148340;
+}
+
+.boton-desencriptar:hover{
+    background:#d48ae7;
+    color:black;
+    box-shadow: 0px 8px 16px 0px rgba(170, 12, 243, 0.959), 0 -6px 20px 0 rgba(192, 51, 231, 0.814);
+    border-color: rgb(216, 93, 250);
+} 
+
+.boton-copiar:hover{
+    background:#ffff5f;
+    color:black;
+    box-shadow: 0px 8px 16px 0px rgba(249, 247, 112, 0.959), 0 -6px 20px 0 rgba(241, 249, 88, 0.897);
+    border-color: rgb(250, 254, 0);
+} 
+
+.boton-nuevo:hover{
+    background:#6a84ff;
+    color:black;
+    box-shadow: 0px 8px 16px 0px rgba(88, 194, 248, 0.959), 0 -6px 20px 0 rgba(90, 200, 250, 0.814);
+    border-color: rgb(26, 115, 231);
+} 
+
+.boton-encriptar:active, .boton-desencriptar:active, .boton-copiar:active, .boton-nuevo:active{
+    border-color: rgb(245, 243, 243);
+    padding: 0 0 2em ;
+}
+
+footer{
+    width: 100%;
+    height: 10%;
+    color: white;
+    background: url(imagenes/fondo-footer.jpg);
+    text-align: center;
+    padding: 30px;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+.logos{
+    width: 3%;
+    margin: 15px;
+}
+
+
+/*DISEÑO RESPONSIVE TABLET*/
+@media screen and (max-width: 769px) {
+    main {
+        display: inline-block;
+    }
+
+    h1, h2{    
+        font-size: 1em;
+    }
+    
+    h3 {
+        font-size: 2em;
+    }
+
+    .LogoBatman{
+        width: 130px;
+        margin: -1em 2em 0 2em;
+    }
+    
+    .contenedor-izquierda{
+        width: 90%;
+        margin: 1em 0 4em 1em;
+    }
+
+    .contenedor-derecha {
+        width: calc(80% - 20px);
+        margin: 1em 0 4em 1em;
+    }
+
+    .textoEntrada, .texto-salida{
+        font-size: 20px;    
+        height: 300px ;
+    }
+
+    .condiciones, .opciones {
+        width: 86%;
+        font-size: 18px;
+        margin: 5px 10px 20px 5px;
+        padding: 0em 2em 1em 1em;
+    }
+
+    .imagenes {
+        width: 25%;
+        margin: -5em 0.5em;
+        float: right;
+    }
+
+    .pregunta{
+        width: 140px;
+        padding: 0 0em;
+    }
+    
+    .img-batman , .img-acertijo{
+        display: none;
+        width: 200px;
+        padding: 0 0em;
+    }
+    
+    .boton-encriptar , .boton-desencriptar, .boton-copiar , .boton-nuevo {
+        width: 8em;
+        padding: 0.7em 0.7em;
+        margin: 0em 0 0.5em 8em;
+        font-size: 16px;
+    }
+
+    footer{
+        font-size: 14px;
+    }
+}
+
+/*DISEÑO RESPONSIVE CELULAR*/
+@media screen and (max-width: 480px) {
+    header{
+        height: 0%;
+    }
+    main {
+        display: inline-block;
+    }
+
+    h1, h2{    
+        font-size: 0.6em;
+    }
+    
+    h3 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .LogoBatman{
+        width: 70px;
+        margin: 0.3em 1em 0 2em;
+    }
+    
+    .contenedor-izquierda , .contenedor-derecha {
+        width: 90%;
+        margin: 20px 0 0 20px;
+    }
+
+    
+    .textoEntrada, .texto-salida{
+        font-size: 16px;    
+        height: 300px ;
+    }
+
+    .condiciones, .opciones {
+        width:90%;
+        font-size: 14px;
+        margin: 5px 10px 20px 5px;
+        padding: 0.6em 1em 0.6em 1em;
+    }
+    .condicion:before, .opcion:before{
+        content: "*";
+    }
+
+    .imagenes {
+        width: 20%;
+        margin: -8em 2em;
+        float: left;
+    }
+
+    .pregunta{
+        width: 80px;
+        margin:2em;
+    }
+    
+    .img-batman , .img-acertijo{
+        display: none;
+        width: 120px;
+        margin:2em;
+    }
+
+    .boton-encriptar , .boton-desencriptar, .boton-copiar , .boton-nuevo {
+        width: 8em;
+        padding: 0.7em 0.7em;
+        margin: 0em 0 0.5em 11em;
+        font-size: 14px;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+    .logos{
+        width: 24px;
+        margin: 12px;
+    }
+}
