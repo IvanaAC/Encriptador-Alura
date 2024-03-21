@@ -6,7 +6,7 @@ document.getElementById('botonEncriptar').addEventListener('click', function() {
 
   let inputText = document.getElementById('textoDeEntrada').value;
   let outputText = '';
-  let caracMayNum = /[!@#$%^&*(),.?":{}|<>A-Z0-9]/g;
+  let caracMayNum = /[!@#$%^&*(),.?":{}|<>A-Z0-9áéíóúÁÉÍÓÚ]/g;
   
   if (inputText.trim() === ''){
       outputText = ('No has ingresado un texto.');
