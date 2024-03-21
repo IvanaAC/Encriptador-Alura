@@ -56,6 +56,7 @@ document.getElementById('botonNuevo').addEventListener('click', function() {
   document.getElementById('img-batman').style.display = 'none';
   document.getElementById('pregunta').style.display = 'block';
   document.querySelector('#textoDeSalida').value = 'No se ha encontrado ningún texto.';
+  limpiar();
 })
 
 /*Funciones de Encriptado*/
